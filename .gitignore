@@ -7,3 +7,6 @@ build/
 .claude/
 AGENTS.md
 CLAUDE.md
+compare_originals/
+fig_originals/
+video_originals/

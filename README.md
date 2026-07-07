@@ -14,14 +14,22 @@ This site is designed to deploy directly with GitHub Pages from the repository r
 
 ## Preview Locally
 
+Recommended — supports HTTP Range requests for smooth video playback/seeking:
+
 ```bash
-python3 -m http.server 8765
+node serve.js
 ```
 
 Then open:
 
 ```text
 http://127.0.0.1:8765/index.html
+```
+
+Python's built-in server also works but lacks Range support, so videos may stutter:
+
+```bash
+python3 -m http.server 8765
 ```
 
 ## Deploy With GitHub Pages
